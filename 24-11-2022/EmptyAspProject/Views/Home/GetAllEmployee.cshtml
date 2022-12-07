@@ -1,0 +1,25 @@
+﻿
+@*@model IEnumerable<EmptyAspProject.Modal.Employee>*@
+@model IEnumerable<EmptyAspProject.ViewModels.HomeDetailsViewModel>
+
+@{
+    ViewBag.Title = "All the employee list";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    <h1></h1>
+
+    foreach (var employee in Model )
+    {
+        <h4>employee.name</h4>
+        <h4>employee.age</h4>
+        //<h4>@model.email</h4>
+        //<h4>@model.id</h4>
+        
+
+    }
+}
+
+
+

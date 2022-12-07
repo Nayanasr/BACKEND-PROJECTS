@@ -1,0 +1,20 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers;
+@model Views_Home_GetAllEmployee;
+
+@{
+    ViewBag.Title = "Create Employee";
+}
+<form  asp-controller="home" asp-action="Create" method="post">
+    <div>
+        <label asp-for="name"  >name</label>
+        <input asp-for="name" placeholder="Name"/>
+    </div>
+      <div>
+        <label asp-for="email"  >name</label>
+        <input asp-for="email" placeholder="Name"/>
+    </div>
+      <div>
+        <label asp-for="age"  >name</label>
+        <input asp-for="age" placeholder="Name"/>
+    </div>
+</form>
